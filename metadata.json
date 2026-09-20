@@ -1,0 +1,6 @@
+{
+  "name": "Mossy By Ishani",
+  "description": "Artisanal crochet keychains, amigurumi bag charms, and handcrafted pocket companions by Ishani. Hand-looped in natural cotton with antique brass hardware.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

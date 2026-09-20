@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Literata', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fcf9f0;
+    color: #1c1c17;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-display);
+  }
+}
+
+/* Faux running-stitch borders */
+.stitch-border {
+  border: 1.5px dashed #c8bfa8;
+}
+
+.stitch-border-moss {
+  border: 1.5px dashed #6c8a6b;
+}
+
+.stitch-border-terracotta {
+  border: 1.5px dashed #d87a56;
+}
+
+/* Warm ambient shadow */
+.shadow-cottage-sm {
+  box-shadow: 0 4px 16px -2px rgba(58, 50, 40, 0.05);
+}
+
+.shadow-cottage-md {
+  box-shadow: 0 8px 24px -4px rgba(58, 50, 40, 0.08), 0 2px 6px -1px rgba(58, 50, 40, 0.03);
+}
+
+.shadow-cottage-lg {
+  box-shadow: 0 16px 36px -6px rgba(58, 50, 40, 0.12), 0 4px 12px -2px rgba(58, 50, 40, 0.05);
+}
+
+/* Rotating artisan badge animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+/* Subtle woven texture overlay */
+.bg-woven-texture {
+  background-image: radial-gradient(#ebe5d6 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
